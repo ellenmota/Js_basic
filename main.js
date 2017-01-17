@@ -71,9 +71,58 @@ function user(){
 		console.log("Valor:"+" "+ value,"Indice:"+" "+key);
 	});
 }
+
+var prop = prompt("Digite sua idade: ");
+
+function yourOld(old){
+	return "Old => "+old;
+}
+
+//Objetos
+//Definindo o objeto
+// var myObject = {};
+
+//Atributos do Objeto
+function Objetos(){
+	var nome = prompt("Digite seu nome: ");
+	var sexo = prompt("Digite seu sexo: ");
+	var idade = prompt("Digite sua idade: ");
+
+	var myObject = {
+		Nome: nome,
+		Sexo: sexo,
+		Idade: idade
+	};
+
+	//Ou
+
+	var OtherObject ={}
+	OtherObject['nome'] = nome;
+	OtherObject['idade'] = idade;
+	OtherObject['sexo'] = sexo;
+
+	//com função
+	OtherObject.start = function(){
+		console.log("Este eh outro Objeto!");
+	}
+
+	
+
+	alert(JSON.stringify(myObject));
+	//Em Json
+	console.log(JSON.stringify(myObject));
+	//Em Object Javascript
+	console.log(myObject);
+	console.log("Outro Objeto", OtherObject);
+	OtherObject.start();
+
+}
+
 //Chamada de Funções
 // myfunction();
 // parametros(numero, bool, bool2, dble, text);
 // anonymous();
 // user();
-loops();
+// loops();
+// console.log(yourOld(prop));
+Objetos();
