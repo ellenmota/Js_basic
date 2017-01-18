@@ -118,6 +118,41 @@ function Objetos(){
 
 }
 
+//Arrays => coleção de dados
+//definição
+function Arrays() {
+	var myarray = [];
+	var array2 = [];
+	//metodos
+	//ADD no final
+	myarray.push('Judithy');
+	myarray.push('Creuzo');
+
+	array2.push('user1');
+
+	//ADD no começo
+	myarray.unshift('Terezinha');
+	
+	console.log(myarray);
+
+
+	//REMOVE no final
+	// myarray.pop();
+	// console.log(myarray);
+
+	//REMOVE no começo
+	myarray.shift();
+	alert(myarray);
+
+	//Mostrar o Indice
+	console.log(myarray.indexOf('Creuzo'));
+
+	//Concatenação
+	var result = myarray.concat(array2);
+	console.log(result);
+
+}
+
 //Chamada de Funções
 // myfunction();
 // parametros(numero, bool, bool2, dble, text);
@@ -125,4 +160,5 @@ function Objetos(){
 // user();
 // loops();
 // console.log(yourOld(prop));
-Objetos();
+// Objetos();
+// Arrays();
